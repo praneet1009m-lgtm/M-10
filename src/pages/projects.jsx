@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const projects = [
-  { title: "Percentile Predictor", type: "AI / Education", image: "/projects/percentile.png", link: "https://github.com/praneetkamble/percentile-predictor", x: "4%", y: "5%", w: "34%", r: "-4deg", z: 3 },
+  { title: "Percentile Predictor", type: "AI / Education", image: "/projects/percentile.png", link: "https://percentile-predictor.vercel.app/", x: "4%", y: "5%", w: "34%", r: "-4deg", z: 3 },
   { title: "Redmagic Clone", type: "Web / Commerce", image: "/projects/redmagic.png", link: "https://github.com/praneetkamble/Redmagic_clone", x: "52%", y: "4%", w: "42%", r: "3deg", z: 2 },
   { title: "Creative Portfolio", type: "Web / Portfolio", image: "/projects/creative-portfolio.png", link: "https://portfolio-sooty-one-52.vercel.app/", x: "15%", y: "39%", w: "36%", r: "-2deg", z: 5 },
   { title: "Standard Recommendation", type: "AI / Research", image: "/projects/recommendation.png", link: "https://praneetkamble.vercel.app", x: "59%", y: "40%", w: "34%", r: "5deg", z: 4 },
