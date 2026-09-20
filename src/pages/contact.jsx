@@ -5,6 +5,18 @@ import gsap from "gsap";
 export default function Contact() {
   const root = useRef(null);
   const [sent, setSent] = useState(false);
+  const sendEmail = (event) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const name = form.get("name");
+    const email = form.get("email");
+    const message = form.get("message");
+    const subject = `Portfolio enquiry from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nProject details:\n${message}`;
+
+    setSent(true);
+    window.location.href = `mailto:praneetkamble051112@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
 
   useGSAP(() => {
     gsap.timeline({ defaults: { ease: "power3.out" } })
@@ -20,7 +32,7 @@ export default function Contact() {
       <div className="contact-v2__pitch contact-v2__reveal"><p className="contact-v2__eyebrow">A good place to start</p><h2>Tell me what<br />you’re <em>making.</em></h2><p className="contact-v2__copy">Whether it is a new product, a sharper digital presence, or a workflow that needs simplifying, I’d love to hear the idea.</p><a href="mailto:praneetkamble051112@gmail.com">praneetkamble051112@gmail.com <b>↗</b></a></div>
     </section>
     <section className="contact-v2__lower contact-v2__reveal">
-      <form onSubmit={(event) => { event.preventDefault(); setSent(true); }} className="contact-v2__form">
+      <form onSubmit={sendEmail} className="contact-v2__form">
         <p>Write a note</p><label>Your name<input name="name" required placeholder="How should I call you?" /></label><label>Email<input name="email" type="email" required placeholder="Where can I reply?" /></label><label>The project<textarea name="message" required placeholder="A short outline is perfect." /></label><button type="submit"><span>{sent ? "Thanks — I’ll be in touch." : "Send it over"}</span><b>↗</b></button>
       </form>
       <aside className="contact-v2__aside"><div><span>Availability</span><strong>Selected freelance work<br />from October 2026</strong></div><div><span>Response time</span><strong>Usually within 24 hours</strong></div><div className="contact-v2__socials"><a href="https://github.com/praneetkamble" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/praneet-kamble-1b03b13a5" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/kamblepraneet/" target="_blank" rel="noreferrer">Instagram ↗</a></div></aside>
