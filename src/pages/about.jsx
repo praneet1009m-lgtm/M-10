@@ -204,7 +204,7 @@ const About = () => {
 
             <div className="h-full w-[40%] rounded-[40px] flex flex-col justify-center items-center gap-4 p-5 border border-white/10" style={{ background: "rgba(14,14,22,0.95)" }}>
 
-              <div onMouseEnter={() => setSelected("websites")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
+              <div onMouseEnter={() => setSelected("websites")} onClick={() => setSelected("websites")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
                     selected === "websites"
                     ? "bg-white text-black border-white scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                     : "border-white/20 text-white/60 hover:border-white/40 hover:text-white hover:bg-white/5"
@@ -212,7 +212,7 @@ const About = () => {
                    <h2 className="font-[font7] text-4xl">Websites</h2>
                </div>
 
-               <div onMouseEnter={() => setSelected("ai")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
+               <div onMouseEnter={() => setSelected("ai")} onClick={() => setSelected("ai")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
                 selected === "ai"
                     ? "bg-white text-black border-white scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                     : "border-white/20 text-white/60 hover:border-white/40 hover:text-white hover:bg-white/5"
@@ -220,7 +220,7 @@ const About = () => {
                     <h2 className="font-[font7] text-4xl">AI Applications</h2>
                </div>
 
-                <div onMouseEnter={() => setSelected("automation")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
+                <div onMouseEnter={() => setSelected("automation")} onClick={() => setSelected("automation")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
                  selected === "automation"
                     ? "bg-white text-black border-white scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                     : "border-white/20 text-white/60 hover:border-white/40 hover:text-white hover:bg-white/5"
@@ -228,7 +228,7 @@ const About = () => {
                     <h2 className="font-[font7] text-4xl"> Automations</h2>
                  </div>
 
-                <div onMouseEnter={() => setSelected("ui")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
+                <div onMouseEnter={() => setSelected("ui")} onClick={() => setSelected("ui")} className={`w-[90%] h-20 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300 border ${
                  selected === "ui"
                     ? "bg-white text-black border-white scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                     : "border-white/20 text-white/60 hover:border-white/40 hover:text-white hover:bg-white/5"
