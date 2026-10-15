@@ -1,0 +1,33 @@
+@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/dm-serif-display-italic-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/dm-serif-display-normal-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:400 800;font-display:swap;src:url(../fonts/bricolage-grotesque-normal-400-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+:root{--serif:'DM Serif Display',Georgia,serif;--sans:'Bricolage Grotesque',system-ui,sans-serif;--r:18px;--card:#FFF8EF;--sh-1:0 1px 0 var(--line)}
+.landing .bgimg{opacity:.9}
+.landing::before{background:linear-gradient(180deg,color-mix(in oklab,var(--primary) 30%,transparent),color-mix(in oklab,var(--primary) 96%,black) 75%)}
+.landing::after{content:"CHAI";position:absolute;top:96px;right:-18px;font:400 120px/1 var(--serif);color:transparent;-webkit-text-stroke:1.5px color-mix(in oklab,var(--accent) 70%,transparent);writing-mode:vertical-rl;z-index:0}
+.table-no{font-weight:400;font-style:normal}
+.table-no em{color:var(--accent);font-style:italic}
+.landing .btn-primary{background:var(--accent)!important;color:var(--ink)!important;border-radius:999px!important;font-weight:700}
+.mono{border-radius:50% 50% 40% 40%/60% 60% 40% 40%;background:var(--primary);color:#fff;font-family:var(--serif)}
+.wm{font-family:var(--serif);font-size:20px!important;font-weight:400}
+.tab{border-radius:999px;font-weight:600;background:color-mix(in oklab,var(--primary) 8%,transparent)}
+.tab[aria-current="true"]{background:var(--primary);color:#fff}
+.intro h1{font-weight:400;font-size:44px}
+.intro h1 em{color:var(--primary)}
+.sec h2{font-weight:400;font-size:30px}
+.sec h2 small{background:var(--accent);color:var(--ink);border-radius:999px;padding:2px 8px}
+.list{grid-template-columns:1fr 1fr;gap:12px}
+.card{display:flex;flex-direction:column;padding:0 0 14px;border:0;background:var(--card);overflow:hidden;box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--primary) 18%,transparent)}
+.card>div:first-child{padding:0 12px}
+.thumb{order:-1;width:100%;height:auto;margin-bottom:10px}
+.thumb img{width:100%;height:auto;aspect-ratio:1;border-radius:0 0 50% 50%/0 0 18% 18%}
+.card h3{font:400 18px/1.15 var(--serif)}
+.card p{font-size:12.5px}
+.card .price{color:var(--primary);font-weight:700}
+.card .price+span{display:none}
+.add{background:var(--primary);color:#fff;box-shadow:none}
+.cartbar button{border-radius:999px;background:var(--primary)}
+.cartbar .count{background:var(--accent);color:var(--ink)}
+.sheet{border-radius:30px 30px 0 0}
+@media (min-width:760px){.list{grid-template-columns:repeat(3,1fr)}}

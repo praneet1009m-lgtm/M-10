@@ -1,0 +1,32 @@
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 800;font-display:swap;src:url(../fonts/playfair-display-italic-400-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 800;font-display:swap;src:url(../fonts/playfair-display-normal-400-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url(../fonts/dm-sans-normal-400-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+:root{--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--r:16px;--card:#FFFCF4}
+.landing::before{background:linear-gradient(180deg,rgba(40,15,8,.2),rgba(40,15,8,.15) 40%,rgba(40,15,8,.6))}
+.landing .content{margin:auto 16px calc(16px + env(safe-area-inset-bottom,0px));padding:26px 22px 22px;background:var(--bg);color:var(--ink);border-radius:24px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);position:relative}
+.landing .content::before{content:"";position:absolute;inset:8px;border:1.5px dashed color-mix(in oklab,var(--primary) 35%,transparent);border-radius:18px;pointer-events:none}
+.landing .lead,.landing .meta{color:var(--ink-2);opacity:1!important}
+.landing .eyebrow{color:var(--primary);opacity:1}
+.table-no{font-weight:600;font-size:clamp(56px,17vw,96px)!important}
+.table-no em{color:var(--primary)}
+.landing .btn-primary{background:var(--primary)!important;color:#fff!important;border-radius:14px!important}
+.mono{border-radius:12px;background:var(--primary);font-style:italic}
+.wm{font-weight:700}
+.topbar{background:var(--bg)}
+.topbar::after{content:"";display:block;height:8px;background:repeating-linear-gradient(90deg,color-mix(in oklab,var(--primary) 70%,transparent) 0 8px,transparent 8px 16px),repeating-linear-gradient(0deg,color-mix(in oklab,var(--primary) 40%,transparent) 0 4px,transparent 4px 8px);opacity:.6}
+.tabs{top:70px;background:var(--bg)}
+.tab{border-radius:12px;font-weight:600}
+.tab[aria-current="true"]{background:var(--primary);color:#fff}
+.intro h1{font-weight:600;font-size:38px}
+.intro h1 em{color:var(--primary)}
+.sec h2{font-size:28px;font-weight:600}
+.sec h2::before{content:"✦";color:var(--accent);font-size:16px}
+.card{grid-template-columns:112px 1fr;border:1.5px dashed color-mix(in oklab,var(--primary) 28%,transparent);box-shadow:none;background:var(--card)}
+.thumb{order:-1}
+.thumb img{border-radius:12px}
+.add{background:var(--accent);color:var(--ink);box-shadow:none;border-radius:12px}
+.card h3{font:600 18px/1.2 var(--serif)}
+.card .price{color:var(--primary)}
+.cartbar button{border-radius:18px 18px 18px 4px;background:var(--primary);color:#fff}
+.cartbar .count{background:var(--accent);color:var(--ink)}
+.sheet h2{font-weight:600}

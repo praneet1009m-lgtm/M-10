@@ -1,13 +1,444 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>m-10</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en-IN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M10 | Praneet Kamble: Crafting Software. Engineering Intelligence.</title>
+<meta name="description" content="M10 is Praneet Kamble, a Computer Engineering student and full-stack developer near Mumbai. Websites, AI applications and UI/UX, with clear prices for local businesses.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="preload" as="image" href="assets/art/hero-main.webp" fetchpriority="high">
+<meta property="og:title" content="M10 | Praneet Kamble">
+<meta property="og:description" content="Crafting Software. Engineering Intelligence. Websites, AI solutions and UI/UX by Praneet Kamble.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/art/hero-main.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0b'/%3E%3Ctext x='5' y='45' font-family='Impact,Arial Black,sans-serif' font-size='34' fill='%23fff'%3EM10%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Knewave&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand logo" href="#home" aria-label="M10, Praneet Kamble, back to top">M10</a>
+    <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+      <span class="nav__toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span>
+    </button>
+    <nav class="nav__menu" id="navMenu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--light btn--sm nav__cta" href="#contact">Let's Build <span class="arr" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero ink grunge" id="home" aria-labelledby="heroTitle">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="hero__hey reveal">Hey, I'm</p>
+      <h1 id="heroTitle" class="hero__title reveal">
+        <span class="logo hero__logo">M10</span>
+        <span class="sr-only">, Praneet Kamble.</span>
+        <span class="hero__tag display">Crafting Software.<br>Engineering <span class="invert">Intelligence.</span></span>
+      </h1>
+      <p class="hero__intro reveal">I'm Praneet Kamble. I build modern websites, AI applications and digital products that solve real problems, plus fast, fairly priced websites for local businesses.</p>
+      <div class="btn-row reveal">
+        <a class="btn btn--light" href="#projects">View My Work <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#contact">Let's Talk</a>
+      </div>
+      <p class="hero__meta reveal"><span>Based near Mumbai</span><span>React · Node.js · Python</span><span>Websites from ₹4,999</span></p>
+      <a class="scroll-cue reveal" href="#about"><i aria-hidden="true"></i>Scroll</a>
+    </div>
+
+    <!-- Manga panel collage (original illustrations) -->
+    <div class="hero__panels reveal" id="heroPanels" aria-label="Illustrated manga panels">
+      <figure class="mpanel mpanel--main" data-depth="1">
+        <img src="assets/art/hero-main.webp" width="900" height="1200" alt="Manga ink illustration: a young developer with spiky hair, seen from behind, looks up between towering city buildings toward a burst of light." fetchpriority="high">
+      </figure>
+      <figure class="mpanel mpanel--s1" data-depth="2.2">
+        <img src="assets/art/panel-ideas.webp" width="520" height="400" alt="Ink panel of a glowing light bulb above a sketch notebook." loading="lazy">
+        <figcaption class="caption">Ideas.</figcaption>
+      </figure>
+      <figure class="mpanel mpanel--s2" data-depth="1.6">
+        <img src="assets/art/panel-code.webp" width="520" height="400" alt="Ink panel: the developer, seen over the shoulder, works at a laptop with lines of code on screen." loading="lazy">
+        <figcaption class="caption">Code.</figcaption>
+      </figure>
+      <figure class="mpanel mpanel--s3" data-depth="2.6">
+        <img src="assets/art/panel-impact.webp" width="520" height="400" alt="Ink panel of a city skyline with the sun rising behind it." loading="lazy">
+        <figcaption class="caption">Impact.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee__track">
+    <span>Websites</span><span>AI Apps</span><span>UI / UX</span><span>React</span><span>Node.js</span><span>Python</span><span>QR Table Ordering</span><span>Automations</span>
+    <span>Websites</span><span>AI Apps</span><span>UI / UX</span><span>React</span><span>Node.js</span><span>Python</span><span>QR Table Ordering</span><span>Automations</span>
+  </div></div>
+  <div class="marquee marquee--alt" aria-hidden="true"><div class="marquee__track">
+    <span>Crafting Software</span><span>Engineering Intelligence</span><span>Ideas</span><span>Code</span><span>Impact</span>
+    <span>Crafting Software</span><span>Engineering Intelligence</span><span>Ideas</span><span>Code</span><span>Impact</span>
+  </div></div>
+</section>
+<div class="tear" aria-hidden="true"></div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section paper" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap about">
+    <figure class="mpanel about__art reveal reveal--wipe">
+      <img src="assets/art/about-portrait.webp" width="900" height="760" alt="Manga ink portrait of a fictional young developer in profile, spiky hair swept back, headphones around the neck, city lights behind." loading="lazy">
+      <figcaption class="brush about__stamp" aria-hidden="true">About<br>Me</figcaption>
+    </figure>
+
+    <div class="about__copy reveal">
+      <p class="chapter"><b>01</b> About</p>
+      <h2 id="aboutTitle" class="display h2">A developer who turns ideas into reality.</h2>
+      <p>I'm Praneet Kamble, a Computer Engineering student and full-stack developer based near Mumbai. I build AI applications, modern websites, desktop software and automation systems, mostly with <strong>React, Node.js and Python</strong>.</p>
+      <p>Great software is more than code. It should be fast, intuitive, visually refined, and designed with the people who use it in mind. Every project is a chance to learn and push what's possible.</p>
+      <p>Alongside product work I run a small web studio for local businesses: one-page and five-page websites, QR table ordering for cafes and restaurants, and Google Business Profile fixes so customers can actually find you.</p>
+      <a class="btn btn--dark" href="#contact">Work with me <span class="arr" aria-hidden="true">→</span></a>
+
+      <!-- Only countable stats: each number can be checked on this page (script.js recounts them from the DOM) -->
+      <ul class="stats" aria-label="Quick facts you can count on this page">
+        <li class="stat reveal"><strong data-count="projects">11</strong><span>projects &amp; demos on this page</span></li>
+        <li class="stat reveal"><strong data-count="demos">2</strong><span>working QR-ordering demos</span></li>
+        <li class="stat reveal"><strong data-count="tools">3</strong><span>core tools: React · Node.js · Python</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="tear tear--ink" aria-hidden="true"></div>
+<!-- ================= PROJECTS ================= -->
+<section class="section ink grunge" id="projects" aria-labelledby="projTitle">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="chapter"><b>02</b> Work</p>
+      <h2 id="projTitle" class="brush sec-title">Featured <span>Projects</span></h2>
+      <p class="sec-sub">Some of the things I've built. Screenshots are real; the cafe and restaurant demos are fictional sample businesses with sample prices. The AI projects run locally; DocQ and LeadAgent use sample documents and websites I wrote myself.</p>
+    </header>
+
+    <div class="chips reveal" role="group" aria-label="Filter projects">
+      <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All <span data-chip-count="all">11</span></button>
+      <button class="chip" type="button" data-filter="ai" aria-pressed="false">AI &amp; tools <span data-chip-count="ai">6</span></button>
+      <button class="chip" type="button" data-filter="web" aria-pressed="false">Web <span data-chip-count="web">3</span></button>
+      <button class="chip" type="button" data-filter="local" aria-pressed="false">Local business <span data-chip-count="local">2</span></button>
+    </div>
+    <p class="sr-only" id="filterStatus" aria-live="polite"></p>
+
+    <div class="cards">
+      <article class="card reveal" data-cat="web">
+        <div class="card__media"><img src="assets/img/proj-redmagic.webp" width="1000" height="536" alt="Redmagic Titan 16 Pro gaming laptop landing page clone" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">01</p>
+          <h3>RedMagic Clone</h3>
+          <ul class="tags" aria-label="Tech used"><li>React</li><li>Three.js</li><li>GSAP</li><li>Tailwind</li><li>TypeScript</li></ul>
+          <p>A front-end recreation of a gaming-laptop product page: dark hero, spec highlights and a configure flow.</p>
+          <a class="card__link" href="https://praneetkamble.github.io/Redmagic_clone/" target="_blank" rel="noopener">Visit live site<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="ai">
+        <div class="card__media"><img src="assets/img/proj-resume.webp" width="1000" height="420" alt="Resume Analyzer landing page: AI-powered resume analysis" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">02</p>
+          <h3>Resume Analyzer</h3>
+          <ul class="tags" aria-label="Tech used"><li>React</li><li>TypeScript</li><li>Tailwind</li><li>Recharts</li></ul>
+          <p>Upload a resume to find ATS issues, missing skills and weak sections, with suggestions to improve it.</p>
+          <a class="card__link" href="https://github.com/praneetkamble/resume_analyser" target="_blank" rel="noopener">View code on GitHub<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="local" data-demo>
+        <div class="card__media card__media--duo">
+          <img src="assets/img/cafe-menu.webp" width="1000" height="625" alt="Kesar Lane Café demo: guest menu with coffee items, veg filter and live order status bar" loading="lazy">
+          <img class="card__phone" src="assets/img/cafe-mobile.webp" width="420" height="909" alt="" loading="lazy">
+          <span class="badge">Demo · fictional cafe</span>
+        </div>
+        <div class="card__body">
+          <p class="card__num">03</p>
+          <h3>QR Table Ordering: Cafe</h3>
+          <ul class="tags" aria-label="Tech used"><li>HTML</li><li>CSS</li><li>Vanilla JS</li><li>No build step</li></ul>
+          <p>Guests scan the table QR, browse, customise and order. The counter sees live orders by table, marks them Preparing or Served, and can switch items out of stock.</p>
+          <div class="card__links">
+            <a class="card__link" href="demos/cafe/index.html?table=5" target="_blank" rel="noopener">Guest view<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+            <a class="card__link" href="demos/cafe/dashboard.html" target="_blank" rel="noopener">Staff dashboard<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="local" data-demo>
+        <div class="card__media card__media--duo">
+          <img src="assets/img/rest-menu.webp" width="1000" height="625" alt="Meher Darbar demo: restaurant menu with starters, veg and non-veg markers and half or full portions" loading="lazy">
+          <img class="card__phone" src="assets/img/rest-mobile.webp" width="420" height="909" alt="" loading="lazy">
+          <span class="badge">Demo · fictional restaurant</span>
+        </div>
+        <div class="card__body">
+          <p class="card__num">04</p>
+          <h3>QR Table Ordering: Restaurant</h3>
+          <ul class="tags" aria-label="Tech used"><li>HTML</li><li>CSS</li><li>Vanilla JS</li><li>BroadcastChannel</li></ul>
+          <p>Ordering by table and seat, half/full portions, a kitchen display (New, Cooking, Ready, Served), Call waiter, Request bill and a per-seat bill with GST.</p>
+          <div class="card__links">
+            <a class="card__link" href="demos/restaurant/index.html?table=4&amp;seat=2" target="_blank" rel="noopener">Guest view<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+            <a class="card__link" href="demos/restaurant/kitchen.html" target="_blank" rel="noopener">Kitchen<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+            <a class="card__link" href="demos/restaurant/billing.html" target="_blank" rel="noopener">Billing<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="ai">
+        <div class="card__media"><img src="assets/img/proj-recommendation.webp" width="1000" height="531" alt="Standards Recommend: search for the Indian standard that applies to a product" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">05</p>
+          <h3>Standards Recommendation</h3>
+          <ul class="tags" aria-label="Tech used"><li>React</li><li>TypeScript</li><li>Gemini API</li><li>Express</li></ul>
+          <p>Describe a product and get the Indian Standards (IS codes) that apply to it, ranked, with category filters.</p>
+          <a class="card__link" href="https://praneetkamble.vercel.app" target="_blank" rel="noopener">Visit live site<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="ai">
+        <div class="card__media"><img src="assets/img/proj-percentile.webp" width="1000" height="499" alt="Percentile Predictor: JEE and CET percentile estimate form with result gauge" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">06</p>
+          <h3>Percentile Predictor</h3>
+          <ul class="tags" aria-label="Tech used"><li>JavaScript</li><li>Education</li></ul>
+          <p>Estimates percentile and rank band for JEE and CET-style entrance exams from an expected score.</p>
+          <a class="card__link" href="https://percentile-predictor.vercel.app/" target="_blank" rel="noopener">Visit live site<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="web">
+        <div class="card__media"><img src="assets/img/proj-creative-portfolio.webp" width="1000" height="420" alt="Creative developer portfolio with neon green accent and 3D avatar" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">07</p>
+          <h3>Creative Portfolio</h3>
+          <ul class="tags" aria-label="Tech used"><li>React</li><li>Tailwind</li><li>Framer Motion</li></ul>
+          <p>An earlier personal portfolio with a dark neon look and an illustrated developer avatar.</p>
+          <a class="card__link" href="https://portfolio-sooty-one-52.vercel.app/" target="_blank" rel="noopener">Visit live site<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="web">
+        <div class="card__media"><img src="assets/img/proj-influencer.webp" width="1000" height="562" alt="Scrapbook-style portfolio website for a lifestyle creator" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">08</p>
+          <h3>Influencer Portfolio</h3>
+          <ul class="tags" aria-label="Type"><li>Portfolio site</li><li>Creator</li></ul>
+          <p>A scrapbook-style portfolio for a lifestyle creator, with photo collage, film-strip details and social links.</p>
+          <a class="card__link" href="https://mau-portfolio-one.vercel.app" target="_blank" rel="noopener">Visit live site<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- NOTE: the GitHub repos below are placeholders; they have not been created yet (see ai-projects/*/README.md; delta, docq and leadagent). -->
+      <article class="card reveal" data-cat="ai">
+        <div class="card__media"><img src="assets/img/proj-docq.webp" width="1000" height="625" alt="DocQ app: a question about incident reporting answered with a page citation and the retrieved passages" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">09</p>
+          <h3>DocQ: Document Q&amp;A (RAG)</h3>
+          <ul class="tags" aria-label="Tech used"><li>Python</li><li>FastAPI</li><li>MiniLM embeddings</li><li>FAISS</li><li>BM25</li></ul>
+          <p>Upload PDFs and ask questions. Every answer cites the document and page it came from. Hybrid search, extractive answers, with an optional LLM you plug in. Measured on my test set of 25 questions over sample documents I wrote: right page in the top 3 for 24 of 25, answer cited the right page for 24 of 25.</p>
+          <a class="card__link" href="https://github.com/praneetkamble/docq" target="_blank" rel="noopener">View code on GitHub<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="ai">
+        <div class="card__media"><img src="assets/img/proj-leadagent.webp" width="1000" height="625" alt="LeadAgent dashboard: a business scored 95 out of 100 with a rubric, a step-by-step trace and a pitch draft waiting for approval" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">10</p>
+          <h3>LeadAgent: Agent with human approval</h3>
+          <ul class="tags" aria-label="Tech used"><li>Python</li><li>FastAPI</li><li>Agent pipeline</li><li>Human-in-the-loop</li></ul>
+          <p>Reads a business website, extracts facts, scores fit on a transparent 100-point rubric, drafts a pitch and then stops until a person approves, edits or rejects it. Nothing is sent automatically. Rule-based by default, optional LLM. Shown on 6 fictional sample sites, with 19 automated tests.</p>
+          <a class="card__link" href="https://github.com/praneetkamble/leadagent" target="_blank" rel="noopener">View code on GitHub<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="ai">
+        <div class="card__media"><img src="assets/img/proj-delta.webp" width="1000" height="625" alt="Delta OS dashboard: a glowing central core with a Talk to Delta input, live system gauges, active modules, today's tasks and quick-action buttons, labelled as a simulated demo PC" loading="lazy"></div>
+        <div class="card__body">
+          <p class="card__num">11</p>
+          <h3>Delta: Personal PC assistant</h3>
+          <ul class="tags" aria-label="Tech used"><li>Python</li><li>FastAPI</li><li>Tool calling</li><li>Safety model</li></ul>
+          <p>A local assistant for a Windows PC: apps, volume, files, reminders, notes and more, by typing or voice. Every action passes one gate that decides safe, ask first or blocked, keeps an audit log and keeps file access inside chosen folders. Runs on a free hosted open-weight model (or fully offline with rules). The dashboard shows live vitals, tasks, activity and safety state next to the chat, and a Vibe Coding space lets you describe an app in plain English, review the code changes as diffs, preview it live and undo with git. Self-test passes on a real Windows PC; the dashboard screenshot uses simulated demo values (693 automated tests passing).</p>
+          <a class="card__link" href="https://github.com/praneetkamble/delta" target="_blank" rel="noopener">View code on GitHub<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="soon reveal">
+      <p class="caption caption--inline">Case studies</p>
+      <p>No made-up testimonials or numbers here. When a client project is live and the owner is happy to be named, its write-up goes in this spot.</p>
+    </div>
+  </div>
+</section>
+
+<div class="tear" aria-hidden="true"></div>
+<!-- ================= SERVICES ================= -->
+<section class="section paper halftone" id="services" aria-labelledby="svcTitle">
+  <div class="wrap">
+    <header class="sec-head sec-head--split reveal">
+      <div><p class="chapter"><b>03</b> Services</p>
+      <h2 id="svcTitle" class="brush sec-title sec-title--dark">My <span>Services</span></h2></div>
+      <p class="display sec-claim">Turning ideas<br>into digital reality.</p>
+    </header>
+
+    <div class="services">
+      <article class="svc reveal">
+        <p class="svc__num">01</p>
+        <h3 class="display">Website Development</h3>
+        <p>Modern, responsive, fast websites. Mobile-first sites for cafes, restaurants, clinics and shops, or custom web apps.</p>
+        <ul class="prices">
+          <li><span>One-page website</span><strong>₹4,999</strong></li>
+          <li><span>Five-page website</span><strong>₹12,999</strong></li>
+          <li><span>Monthly upkeep</span><strong>₹499<small>/month</small></strong></li>
+          <li><span>Custom web apps</span><strong class="quote">Custom quote</strong></li>
+        </ul>
+        <p class="svc__terms"><strong>Websites:</strong> 10% upfront, 90% on delivery.</p>
+      </article>
+
+      <article class="svc svc--dark reveal">
+        <p class="svc__num">02</p>
+        <h3 class="display">AI Solutions</h3>
+        <p>Custom AI tools and automations for real problems: assistants, analysers, recommendation tools and workflow automation with Python, APIs and agents.</p>
+        <ul class="prices">
+          <li><span>AI apps &amp; tools</span><strong class="quote">Custom quote</strong></li>
+          <li><span>Automations</span><strong class="quote">Custom quote</strong></li>
+        </ul>
+      </article>
+
+      <article class="svc reveal">
+        <p class="svc__num">03</p>
+        <h3 class="display">UI/UX Design</h3>
+        <p>Clean, modern interfaces people enjoy using: interaction design, visual systems, prototypes and polished front-ends.</p>
+        <ul class="prices">
+          <li><span>UI/UX &amp; front-end</span><strong class="quote">Custom quote</strong></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="extras">
+      <article class="svc svc--wide reveal">
+        <p class="svc__num">+</p>
+        <div>
+          <h3 class="display">Local Boost</h3>
+          <p>Fix and tidy your Google Business Profile so people searching nearby find the right details.</p>
+        </div>
+        <p class="price-big">₹1,499</p>
+      </article>
+      <article class="svc svc--wide reveal">
+        <p class="svc__num">+</p>
+        <div>
+          <h3 class="display">QR Table Ordering</h3>
+          <p>Shaped around your menu, tables, kitchen screen and billing. Try the demos above first.</p>
+        </div>
+        <p class="price-big quote">Custom quote</p>
+      </article>
+    </div>
+
+    <div class="terms reveal">
+      <p class="terms__lead display">Payment terms for websites</p>
+      <p class="terms__split"><span><strong>10%</strong> upfront to start</span><span><strong>90%</strong> on delivery</span></p>
+      <p class="terms__note">All prices in Indian rupees. Anything not listed is a custom quote, agreed in writing before work starts.</p>
+    </div>
+
+    <div class="faq" aria-labelledby="faqTitle">
+      <h3 id="faqTitle" class="display faq__title reveal">Quick answers</h3>
+      <details class="reveal"><summary>What do I get for ₹4,999?</summary><p>A one-page website that works well on phones: who you are, what you offer, photos, location and contact buttons. Five pages is ₹12,999.</p></details>
+      <details class="reveal"><summary>Is the ₹499/month upkeep required?</summary><p>It's optional. It covers keeping your website updated after launch.</p></details>
+      <details class="reveal"><summary>Can I try QR ordering before deciding?</summary><p>Yes. The cafe and restaurant demos above are working demos with fictional businesses and sample prices. A real setup uses your menu and branding plus a small backend so every phone and the kitchen share orders.</p></details>
+      <details class="reveal"><summary>Do you work outside Mumbai?</summary><p>Yes. I'm based near Mumbai and work remotely with businesses anywhere.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="tear tear--ink" aria-hidden="true"></div>
+<!-- ================= CONTACT ================= -->
+<section class="section ink grunge contact" id="contact" aria-labelledby="ctaTitle">
+  <div class="wrap">
+    <div class="contact__banner reveal reveal--wipe">
+      <img src="assets/art/contact-skyline.webp" width="1600" height="640" alt="Manga ink illustration: the same fictional developer on a rooftop at night, looking out over the city skyline under a full moon." loading="lazy">
+      <p class="bubble" aria-hidden="true">Let's build<br>something<br>real.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__intro reveal">
+        <p class="chapter"><b>04</b> Contact</p>
+        <h2 id="ctaTitle" class="brush sec-title">Let's <span>Connect</span></h2>
+        <p class="contact__lead">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+        <div class="contact__btns">
+          <a class="btn btn--light" href="mailto:praneetkamble051112@gmail.com">✉ Email Me</a>
+          <a class="btn btn--ghost is-disabled" id="waLink" role="link" aria-disabled="true" tabindex="-1">WhatsApp <span class="todo-tag">TODO: number</span></a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/praneet-kamble-1b03b13a5" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost" href="https://github.com/praneetkamble" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="email-card">
+          <p class="kicker kicker--light">Email</p>
+          <a class="email-card__addr" href="mailto:praneetkamble051112@gmail.com">praneetkamble051112@gmail.com</a>
+          <button class="btn btn--light btn--sm" id="copyEmail" type="button">Copy email</button>
+          <span class="copy-status" id="copyStatus" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <form class="form reveal" id="contactForm" novalidate>
+        <p class="kicker">Write a note</p>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Your email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-type">What do you need?</label>
+          <select id="f-type" name="type">
+            <option>One-page website (₹4,999)</option>
+            <option>Five-page website (₹12,999)</option>
+            <option>Local Boost: Google Business Profile fix (₹1,499)</option>
+            <option>QR table ordering (custom quote)</option>
+            <option>AI solution or automation (custom quote)</option>
+            <option>UI/UX design (custom quote)</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Tell me about it</label>
+          <textarea id="f-msg" name="message" rows="5" required placeholder="Business or project name, what you need, any deadline."></textarea>
+        </div>
+        <p class="form__error" id="formError" role="alert"></p>
+        <button class="btn btn--dark btn--block" type="submit">Send via email app <span aria-hidden="true">↗</span></button>
+        <p class="form__hint">Opens your email app with the message filled in. Nothing is stored on this site.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a class="logo footer__logo" href="#home" aria-label="M10, back to top">M10</a>
+      <p><strong>Praneet Kamble</strong><br>Crafting Software. Engineering Intelligence.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+      <a href="https://www.instagram.com/kamblepraneet/" target="_blank" rel="noopener">Instagram<span class="sr-only"> (opens in a new tab)</span></a>
+    </nav>
+    <a class="footer__top" href="#home" aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+  </div>
+  <p class="wrap footer__legal">© <span id="year">2026</span> Praneet Kamble · Near Mumbai, India · Illustrations are original artwork of a fictional character.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
 </html>
